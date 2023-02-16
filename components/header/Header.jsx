@@ -7,7 +7,7 @@ function Header() {
   return (
     <>
 
-      <header>
+      <header className={styles.header}>
         <div className={styles.container}>
           <Image src='/image/logo.png' alt='logo' width={114} height={83} />
           <ul>
