@@ -2,6 +2,7 @@ import Head from 'next/head'
 import React from 'react'
 
 function blogDetail() {
+  
   return (
     <>
       <Head>
