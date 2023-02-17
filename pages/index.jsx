@@ -112,7 +112,7 @@ export default function Home() {
                   <li key={e.id}>
                     <h4>{e.number}</h4>
                     <p>{e.title}</p>
-                    
+
                   </li>
                 ))
               }
@@ -123,9 +123,56 @@ export default function Home() {
             <h4>All-In-One <span>Cloud Software.</span></h4>
             <p>TOTC is one powerful online software suite that combines all the tools needed to run a successful school or office.
             </p>
+            <ul>
+              <li>
+                <div className={styles.divcha}>
+                  <div className="img">
+                    <Image src='/image/document.svg' alt='document' width={33} height={46} />
+                  </div>
+                  <h5>Online Billing, Invoicing, & Contracts</h5>
+                  <p>Simple and secure control of your organization’s financial and legal transactions. Send customized invoices and contracts</p>
+                </div>
+              </li>
+              <li>
+                <div className={styles.divcha}>
+                  <div className="img">
+                    <Image src='/image/user.svg' alt='document' width={55} height={44} />
+                  </div>
+                  <h5>Easy Scheduling & Attendance Tracking</h5>
+                  <p>Schedule and reserve classrooms at one campus or multiple campuses. Keep detailed records of student attendance</p>
+                </div>
+              </li>
+              <li>
+                <div className={styles.divcha}>
+                  <div className="img">
+                    <Image src='/image/document.svg' alt='document' width={33} height={46} />
+                  </div>
+                  <h5>Customer Tracking</h5>
+                  <p>Automate and track emails to individuals or groups. Skilline’s built-in system helps organize your organization </p>
+                </div >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className={styles.totc}>
+          <div>
+            <h2>What is <span>TOTC?</span></h2>
+            <p>TOTC is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place.</p>
+            <ul>
+              <li>
+                <h3>FOR INSTRUCTORS</h3>
+                <button>Start a class today</button>
+              </li>
+              <li>
+                <h3>FOR STUDENTS</h3>
+                <button>Enter access code</button>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+
     </>
   )
 }
