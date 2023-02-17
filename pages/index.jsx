@@ -112,6 +112,7 @@ export default function Home() {
                   <li key={e.id}>
                     <h4>{e.number}</h4>
                     <p>{e.title}</p>
+                    
                   </li>
                 ))
               }
