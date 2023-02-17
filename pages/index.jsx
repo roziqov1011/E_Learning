@@ -171,6 +171,19 @@ export default function Home() {
             </ul>
           </div>
         </div>
+
+        <div className={styles.everything}>
+          <ul>
+            <li>
+              <h2>Everything you can do in a physical classroom, <span>you can do with TOTC</span></h2>
+              <p>TOTC’s school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.</p>
+              <Link href='/'>Learn more</Link>
+            </li>
+            <li>
+              <Image src='/image/video__play.svg' alt='video' width={705} height={470}/>
+            </li>
+          </ul>
+        </div>
       </div>
 
     </>
