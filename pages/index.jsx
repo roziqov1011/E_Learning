@@ -4,9 +4,38 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.scss'
 import Link from 'next/link'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const ourData = [
+    {
+      id: 1,
+      number: '15K+',
+      title: 'Students'
+    },
+    {
+      id: 2,
+      number: '75%',
+      title: 'Total success'
+
+    },
+    {
+      id: 3,
+      number: '35',
+      title: 'Main questions'
+    },
+    {
+      id: 4,
+      number: '26',
+      title: 'Chief experts'
+    },
+    {
+      id: 5,
+      number: '16',
+      title: 'Years of experience'
+    },
+  ]
   return (
     <>
       <Head>
@@ -28,33 +57,71 @@ export default function Home() {
                 <Link href=''>
                   <button>
                     <h5>
-                      <Image src='/image/play__foto.svg' alt='play foto' width={40} height={40}/>
+                      <Image src='/image/play__foto.svg' alt='play foto' width={40} height={40} />
                     </h5>
                     <h6>Watch how it works</h6>
                   </button>
                 </Link>
               </span>
             </div>
-            
+
             <ul>
               <li>
-                <h6>250K</h6>
-                <p>Assisted Student</p>
+                <Image src='/image/progress.svg' alt='progress' width={89} height={89} />
               </li>
               <li>
-                <h6>250K</h6>
-                <p>Assisted Student</p>
+                <Image src='/image/calendar.svg' alt='progress' width={49} height={49} />
+                <span>
+                  <h6><b>250K</b></h6>
+                  <p>Assisted Student</p>
+                </span>
               </li>
               <li>
-                <h6>250K</h6>
-                <p>Assisted Student</p>
+                <Image src='/image/message.svg' alt='progress' width={49} height={49} />
+                <span>
+                  <h6>Congratulations</h6>
+                  <p>Your admission completed</p>
+                </span>
               </li>
               <li>
-                <h6>250K</h6>
-                <p>Assisted Student</p>
+                <b>
+                  <Image src='/image/odamcha.svg' alt='progress' width={49} height={49} />
+                </b>
+                <span>
+                  <h6>User Experience Class</h6>
+                  <p>Today at 12.00 PM</p>
+                  <Link href='/'>
+                    <button>Join Now</button>
+                  </Link>
+                </span>
               </li>
-              
+
             </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.main}>
+        <div className={styles.container}>
+          <div className={styles.main__inner}>
+            <h3>Our Success</h3>
+            <p>Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec nam et pharetra gravida. Adipiscing a quis ultrices eu ornare tristique vel nisl orci. </p>
+            <ul>
+              {
+                ourData?.map((e) => (
+                  <li key={e.id}>
+                    <h4>{e.number}</h4>
+                    <p>{e.title}</p>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+
+          <div className={styles.main__mainner}>
+            <h4>All-In-One <span>Cloud Software.</span></h4>
+            <p>TOTC is one powerful online software suite that combines all the tools needed to run a successful school or office.
+            </p>
           </div>
         </div>
       </div>
