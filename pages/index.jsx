@@ -298,6 +298,199 @@ export default function Home() {
             <Link href='/'><button>See more features</button></Link>
           </div>
         </div>
+
+
+        <div className={styles.sliders}>
+          <div className={styles.sliders__inner}>
+            <div className={styles.sliders__inner__head}>
+              <h2>Explore Course</h2>
+              <p>Ut sed eros finibus, placerat orci id, dapibus.</p>
+              <span>
+                <h5>Lorem Ipsum</h5>
+                <Link href='/'>See All</Link>
+              </span>
+              <ul>
+                <li>
+                  <h1>
+                    <h3>boooks</h3>
+                  </h1>
+                  <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
+                  <b>
+                    <h6>Lorem ipsum dolor sit amet.</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
+                    <h4>$450</h4>
+                    <button>EXPLORE</button>
+                  </b>
+                </li>
+                <li>
+                  <h1>
+                    <h3>boooks</h3>
+                  </h1>
+                  <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
+                  <b>
+                    <h6>Lorem ipsum dolor sit amet.</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
+                    <h4>$450</h4>
+                    <button>EXPLORE</button>
+                  </b>
+                </li>
+                <li>
+                  <h1>
+                    <h3>boooks</h3>
+                  </h1>
+                  <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
+                  <b>
+                    <h6>Lorem ipsum dolor sit amet.</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
+                    <h4>$450</h4>
+                    <button>EXPLORE</button>
+                  </b>
+                </li>
+                <li>
+                  <h1>
+                    <h3>boooks</h3>
+                  </h1>
+                  <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
+                  <b>
+                    <h6>Lorem ipsum dolor sit amet.</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
+                    <h4>$450</h4>
+                    <button>EXPLORE</button>
+                  </b>
+                </li>
+
+                <li>
+                  <h1>
+                    <h3>boooks</h3>
+                  </h1>
+                  <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
+                  <b>
+                    <h6>Lorem ipsum dolor sit amet.</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
+                    <h4>$450</h4>
+                    <button>EXPLORE</button>
+                  </b>
+                </li>
+                <li>
+                  <h1>
+                    <h3>boooks</h3>
+                  </h1>
+                  <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
+                  <b>
+                    <h6>Lorem ipsum dolor sit amet.</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
+                    <h4>$450</h4>
+                    <button>EXPLORE</button>
+                  </b>
+                </li>
+              </ul>
+
+              <span>
+                <h5>Lorem Ipsum</h5>
+                <Link href='/'>See All</Link>
+              </span>
+              <ul>
+                <li>
+                  <h1>
+                    <h3>Anime</h3>
+                  </h1>
+                  <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
+                  <b>
+                    <h6>Lorem ipsum dolor sit amet.</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
+                    <h4>$450</h4>
+                    <button>EXPLORE</button>
+                  </b>
+                </li>
+                <li>
+                  <h1>
+                    <h3>Anime</h3>
+                  </h1>
+                  <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
+                  <b>
+                    <h6>Lorem ipsum dolor sit amet.</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
+                    <h4>$450</h4>
+                    <button>EXPLORE</button>
+                  </b>
+                </li>
+                <li>
+                  <h1>
+                    <h3>Anime</h3>
+                  </h1>
+                  <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
+                  <b>
+                    <h6>Lorem ipsum dolor sit amet.</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
+                    <h4>$450</h4>
+                    <button>EXPLORE</button>
+                  </b>
+                </li>
+                <li>
+                  <h1>
+                    <h3>Anime</h3>
+                  </h1>
+                  <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
+                  <b>
+                    <h6>Lorem ipsum dolor sit amet.</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
+                    <h4>$450</h4>
+                    <button>EXPLORE</button>
+                  </b>
+                </li>
+
+                <li>
+                  <h1>
+                    <h3>Anime</h3>
+                  </h1>
+                  <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
+                  <b>
+                    <h6>Lorem ipsum dolor sit amet.</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
+                    <h4>$450</h4>
+                    <button>EXPLORE</button>
+                  </b>
+                </li>
+                <li>
+                  <h1>
+                    <h3>Anime</h3>
+                  </h1>
+                  <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
+                  <b>
+                    <h6>Lorem ipsum dolor sit amet.</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
+                    <h4>$450</h4>
+                    <button>EXPLORE</button>
+                  </b>
+                </li>
+                <li>
+                  <h1>
+                    <h3>Anime</h3>
+                  </h1>
+                  <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
+                  <b>
+                    <h6>Lorem ipsum dolor sit amet.</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
+                    <h4>$450</h4>
+                    <button>EXPLORE</button>
+                  </b>
+                </li>
+                <li>
+                  <h1>
+                    <h3>Anime</h3>
+                  </h1>
+                  <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
+                  <b>
+                    <h6>Lorem ipsum dolor sit amet.</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
+                    <h4>$450</h4>
+                    <button>EXPLORE</button>
+                  </b>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
 
     </>
