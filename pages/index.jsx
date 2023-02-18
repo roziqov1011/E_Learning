@@ -175,14 +175,128 @@ export default function Home() {
         <div className={styles.everything}>
           <ul>
             <li>
-              <h2>Everything you can do in a physical classroom, <span>you can do with TOTC</span></h2>
-              <p>TOTC’s school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.</p>
-              <Link href='/'>Learn more</Link>
+              <div>
+                <h2>Everything you can do in a physical classroom, <span>you can do with TOTC</span></h2>
+                <p>TOTC’s school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.</p>
+                <Link href='/'>Learn more</Link>
+              </div>
             </li>
             <li>
-              <Image src='/image/video__play.svg' alt='video' width={705} height={470}/>
+              <Image src='/image/video__play.svg' alt='video' width={705} height={470} />
             </li>
           </ul>
+        </div>
+
+        <div className={styles.feature}>
+          <span>
+            <h3>Our <b>Features</b></h3>
+            <p>This very extraordinary feature, can make learning activities more efficient</p>
+            <ul>
+              <li className={styles.lillar}>
+                <h5>
+                  <Image src='image/Howard.svg' alt='rasm' width={255} height={246} />
+                  <h6>
+                    <button>Present</button>
+                    <button>End the Call</button>
+                  </h6>
+                </h5>
+                <h5>
+                  <Image src='image/Tamara.svg' alt='rasm' width={166} height={160} />
+                  <Image src='image/Humbert.svg' alt='rasm' width={166} height={160} />
+                </h5>
+                <h5>
+                  <Image src='image/Adam.svg' alt='rasm' width={202} height={195} />
+                  <Image src='image/Patrica.svg' alt='rasm' width={240} height={232} />
+                </h5>
+              </li>
+              <li>
+                <h4>A <b>user interface</b> designed for the classroom</h4>
+                <ul>
+                  <li>
+                    <h6>
+                      <Image src='/image/menu.svg' width={26} height={26} alt='rasmca' />
+                    </h6>
+                    <p>Teachers don’t get lost in the grid view and have a dedicated Podium space.</p>
+                  </li>
+                  <li>
+                    <h6>
+                      <Image src='/image/menu__second.svg' width={28} height={26} alt='rasmca' />
+                    </h6>
+                    <p>TA’s and presenters can be moved to the front of the class.</p>
+                  </li>
+                  <li>
+                    <h6>
+                      <Image src='/image/menu__third.svg' width={30} height={26} alt='rasmca' />
+                    </h6>
+                    <p>Teachers can easily see all students and class data at one time.</p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </span>
+        </div>
+
+        <div className={styles.tools}>
+          <div className={styles.tools__inner}>
+            <ul>
+              <li>
+                <h2><b>Tools</b> For Teachers And Learners</h2>
+                <p>Class has a dynamic set of teaching tools built to be deployed and used during class.
+                  Teachers can handout assignments in real-time for students to complete and submit.</p>
+              </li>
+              <li>
+                <h3>
+                  <h5></h5>
+                  <Image src='/image/qizcha__one.svg' alt='d' width={86} height={86} />
+                  <Image src='/image/qizcha__two.svg' className={styles.rasm} alt='d' width={86} height={86} />
+                </h3>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className={styles.questions}>
+          <div className={styles.questions__inner}>
+            <ul>
+              <li>
+                <h4>Question 1</h4>
+                <h3>True or false? This play takes place in Italy</h3>
+                <Image src='/image/sohil.svg' alt='rasm' width={450} height={255} />
+                <span>
+                  <Image src='/image/samolyot.svg' alt='1234' width={50} height={50} />
+                  <p>Your answer was sent successfully</p>
+                </span>
+              </li>
+              <li>
+                <h2>Assessments, <b>Quizzes</b>, Tests</h2>
+                <p>Easily launch live assignments, quizzes, and tests.Student results are automatically entered in the online gradebook.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className={styles.management}>
+          <div className={styles.management__inner}>
+            <ul>
+              <li>
+                <h2><b>Class Management</b> Tools for Educators</h2>
+                <p>Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. With the Gradebook, teachers can review and grade tests and quizzes in real-time.</p>
+              </li>
+              <li>
+                <Image src='/image/gradebook.svg' alt='gradebook' width={808} height={560} />
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <h2>One-on-One <b>Discussions</b></h2>
+                <p>Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.</p>
+              </li>
+              <li>
+                <Image src='/image/gradebook2.svg' alt='gradebook' width={755} height={500} />
+              </li>
+            </ul>
+            <Link href='/'><button>See more features</button></Link>
+          </div>
         </div>
       </div>
 
