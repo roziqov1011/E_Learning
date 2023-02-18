@@ -1,36 +1,65 @@
 import Head from 'next/head'
 import React from 'react'
-import Image from 'next/image'
 import styles from '@/styles/literatureCourse.module.css'
 
 function literatureCourse() {
   const Data = [
     {
-      name:"book"
+      id: 1,
+      name: "About"
     },
     {
-      name:"Course"
+      id: 2,
+      name: "Course"
     },
     {
-      name:"Course"
+      id: 3,
+      name: "Notes"
     },
     {
-      name:"Course"
+      id: 4,
+      name: "Project"
     },
     {
-      name:"Course"
+      id: 5,
+      name: "Podcast"
     },
     {
-      name:"Course"
+      id: 6,
+      name: "Book"
     },
     {
-      name:"Course"
-    },
-    {
-      name:"Course"
-    },
+      id: 7,
+      name: "Review"
+    }
   ]
-  Data.map((e)=>{
+  const block = [
+    {
+      tittle: "All Benefits of PLUS",
+      price: "$24"
+    },
+    {
+      tittle: "All Benefits of PLUS",
+      price: "$24"
+    },
+    {
+      tittle: "All Benefits of PLUS",
+      price: "$24"
+    },
+    {
+      tittle: "All Benefits of PLUS",
+      price: "$24"
+    },
+    {
+      tittle: "All Benefits of PLUS",
+      price: "$24"
+    },
+    {
+      tittle: "All Benefits of PLUS",
+      price: "$24"
+    }
+  ]
+  Data.map((e) => {
     console.log(e.name);
   })
   return (
@@ -38,54 +67,96 @@ function literatureCourse() {
       <Head>
         <title>Literature Course</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"></link>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossOrigin="anonymous"></link>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"></link>
       </Head>
-      <div>
+      <div className={styles.contai}>
         <div className={styles.literabag}>
           <div className={styles.serverimg}>
           </div>
           <div className={styles.title}>
             <div className={styles.tittlecon}>
               <div className={styles.serverhead}>
-                <h2>John Anderson</h2>
-                <button>Enroll Now</button>
+                {Data?.map((e) => (
+                  <h2 key={e.id}>{e.id == 1 ? e.name : ''}</h2>
+                ))}
               </div>
               <p>Assistant Professor at Mcmaster University</p>
               <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <br /> utlabore et dolore magna aliqua. Ut enum ad minim veniam, quis nostrud</b>
               <div className={styles.df}>
                 <ul className={styles.ul}>
-                <li>
-                  <i className="bi bi-star"></i>
-                  <p>4.9 instructor Rating</p>
-                </li>
-                <li>
-                  <i className="bi bi-star"></i>
-                  <p>1,592 Students</p>
-                </li>
-                <li>
-                  <i className="bi bi-star"></i>
-                  <p>Courses</p>
-                </li>
-              </ul>
-              <ul className={styles.web}>
-                <li>
-                  <img src="/image/twitter.svg"alt='progress'  />
-                </li>
-                <li>
-                  <img src="/image/twitter.svg" alt='progress' />
-                </li>
-                <li>
-                  <img src="/image/twitter.svg" alt='progress' />
-                </li>
-              </ul>
+                  <li>
+                    <i className="bi bi-star"></i>
+                    <p>4.9 instructor Rating</p>
+                  </li>
+                  <li>
+                    <i className="bi bi-star"></i>
+                    <p>1,592 Students</p>
+                  </li>
+                  <li>
+                    <i className="bi bi-star"></i>
+                    <p>Courses</p>
+                  </li>
+                </ul>
+                <ul className={styles.web}>
+                  <li>
+                    <img src="/image/twitter.svg" alt='progress' />
+                  </li>
+                  <li>
+                    <img src="/image/twitter.svg" alt='progress' />
+                  </li>
+                  <li>
+                    <img src="/image/twitter.svg" alt='progress' />
+                  </li>
+                </ul>
+                <ul>
+                </ul>
               </div>
             </div>
           </div>
         </div>
+        <ul className={styles.book}>
+          {
+            Data?.map((e) => (
+              <li key={e.id}>
+                <p>{e.name}</p>
+              </li>
+            ))
+          }
+        </ul>
+        <h2 className={styles.h2}>Literature course</h2>
+        <ul className={styles.boo}>
+          {
+            block?.map((e, i) => (
+              <li key={i}>
+                <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2Fyc3xlbnwwfHwwfHw%3D&w=1000&q=80" alt="" />
+                <div className={styles.div}>
+                  <b>{e.tittle}</b>
+                  <p>{e.price}</p>
+                </div>
+              </li>
+            ))
+          }
+        </ul>
+        <nav aria-label="Page navigation example" className={styles.pagina}>
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossOrigin="anonymous"></script>
     </>
   )
 }
