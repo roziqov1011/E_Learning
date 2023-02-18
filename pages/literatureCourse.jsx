@@ -2,10 +2,38 @@ import Head from 'next/head'
 import React from 'react'
 import Image from 'next/image'
 import styles from '@/styles/literatureCourse.module.css'
-// import i from '../public/image/k.png'
 
 function literatureCourse() {
-   return (
+  const Data = [
+    {
+      name:"book"
+    },
+    {
+      name:"Course"
+    },
+    {
+      name:"Course"
+    },
+    {
+      name:"Course"
+    },
+    {
+      name:"Course"
+    },
+    {
+      name:"Course"
+    },
+    {
+      name:"Course"
+    },
+    {
+      name:"Course"
+    },
+  ]
+  Data.map((e)=>{
+    console.log(e.name);
+  })
+  return (
     <>
       <Head>
         <title>Literature Course</title>
@@ -25,7 +53,7 @@ function literatureCourse() {
               </div>
               <p>Assistant Professor at Mcmaster University</p>
               <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <br /> utlabore et dolore magna aliqua. Ut enum ad minim veniam, quis nostrud</b>
-              <div className="df">
+              <div className={styles.df}>
                 <ul className={styles.ul}>
                 <li>
                   <i className="bi bi-star"></i>
