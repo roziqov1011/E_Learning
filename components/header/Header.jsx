@@ -20,7 +20,7 @@ function Header() {
             <Link href=''>
               <li>Careers</li>
             </Link>
-            <Link href=''>
+            <Link href='/blog'>
               <li>Blog</li>
             </Link>
             <Link href=''>
