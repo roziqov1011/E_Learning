@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '@/styles/Blog.module.scss'
+import style from '@/styles/BlogDetails.module.scss'
 import blogIntro from 'assets/images/blog.png'
 import blogList from 'assets/images/blog-list.png'
 import blogAnswer from 'assets/images/blog-answer.png'
@@ -84,43 +85,58 @@ const Blog = () => {
                         </div>
                     </div>
                 </section>
-                <section className={styles.blog_answer}>
-                    <div className="container">
-                        <div className={styles.container}>
-                            <ul className={styles.container__list1}>
-                                <li className={styles.container__list1__item}>Related Blog </li>
-                                <li className={styles.container__list1__item}><button>See all</button></li>
-                            </ul>
-                            <ul className={styles.container__list2}>
-                                <li className={styles.container__list2__item}>
-                                    <Image className={styles.container__list2__item__img}
-                                        src={blogAnswer}
-                                        alt='blog-answer'
-                                        width={200}
-                                        height={200}
-                                    />
-                                    <h2>Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution</h2>
-                                    <b>
-                                        <Image />
-                                        <p>Jony</p>
-                                    </b>
-                                    <p>Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    <Link href='/'>
-                                        <button>Read more</button>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <i className="bi bi-eye-fill"></i>
-                                    <p>251,232</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
+        <main className={style.blog__cards}>
+          <div className={`${style.blog__cards__container} container`}>
+            <div className={style.blog__cards__container__title}>
+              <h4>Related Blog </h4>
+              <Link href='/'>
+                <p>See all</p>
+              </Link>
+            </div>
+          <ul>
+            <li>
+              <Image src='/image/opaxon.svg' alt='opaxon' width={400} height={350}/>
+              <span>
+              <h3>Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution</h3>
+              <span>
+                <Image src='/image/qizaloq4.svg' alt='sdafs' width={100} height={100} />
+                <b>Lina</b>
+              </span>
+              </span>
+              <p className={style.text}>Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
+              <div>
+                <Link href='/blogDetail'>
+                <p>Read more</p>
+                </Link>
+                <span>
+                  <i className="bi bi-eye-fill"></i>
+                  <p className={style.text2}>251,232</p>
+                </span>
+              </div>
+            </li>
+            <li>
+              <Image src='/image/opaxon.svg' alt='opaxon' width={400} height={350}/>
+              <span>
+              <h3>Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution</h3>
+              <span>
+                <Image src='/image/qizaloq4.svg' alt='sdafs' width={100} height={100} />
+                <b>Lina</b>
+              </span>
+              </span>
+              <p className={style.text}>Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
+              <div>
+                <Link href='/blogDetail'>
+                <p>Read more</p>
+                </Link>
+                <span>
+                  <i className="bi bi-eye-fill"></i>
+                  <p className={style.text2}>251,232</p>
+                </span>
+              </div>
+            </li>
+          </ul>
+          </div>
+        </main>
             </main>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         </>
