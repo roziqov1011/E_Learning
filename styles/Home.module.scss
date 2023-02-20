@@ -7,7 +7,8 @@
   font-family: 'Poppins', sans-serif;
 
 }
-.none{
+
+.none {
   display: none;
 }
 
@@ -20,16 +21,19 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  .coll{
-    a{
+
+  .coll {
+    a {
       color: #5B5B5B;
-      li{
-        &:hover{
+
+      li {
+        &:hover {
           color: #49BBBD;
         }
       }
     }
   }
+
   ul {
     display: flex;
     justify-content: space-evenly;
@@ -873,6 +877,7 @@
               justify-content: space-evenly;
               flex-wrap: nowrap;
               flex-direction: row;
+
               button {
                 color: #fff;
                 background-color: #3465E1;
@@ -1297,12 +1302,12 @@
 
 
           // > li{
-            
+
           //   &:hover{
           //     flex: 5;
           //   }
           // }
-          h2{
+          h2 {
             position: absolute;
             background-color: #00000013;
             height: 100px;
@@ -1312,7 +1317,9 @@
             border-radius: 25px;
             bottom: 100px;
           }
+
           border-radius: 25px;
+
           li {
             border: 1px solid #00BCD4;
             background-color: #fff;
@@ -1338,31 +1345,36 @@
             transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
 
 
-            &:nth-child(1){
+            &:nth-child(1) {
               margin-left: -100px;
             }
-            &:nth-child(2){
-              .plar{
+
+            &:nth-child(2) {
+              .plar {
                 background: #23BDEE;
               }
             }
-            &:nth-child(3){
-              .plar{
+
+            &:nth-child(3) {
+              .plar {
                 background: #FF8374;
               }
             }
-            &:nth-child(4){
-              .plar{
+
+            &:nth-child(4) {
+              .plar {
                 background: #B45A1B;
               }
             }
-            &:nth-child(5){
-              .plar{
+
+            &:nth-child(5) {
+              .plar {
                 background: #308598;
               }
             }
-            &:nth-child(6){
-              .plar{
+
+            &:nth-child(6) {
+              .plar {
                 background: #6DB4A7;
               }
             }
@@ -1373,25 +1385,29 @@
               opacity: 0;
             }
 
-            h1{
+            h1 {
               margin: 0 auto;
               background: #ccfabc;
               border-radius: 24px;
               padding: 10px;
+
               .plar {
                 background-color: #FF6F00;
                 font-size: 24px;
                 padding: 8px 150px;
                 margin: 0 auto;
                 border-radius: 24px;
-                &:nth-child(3){
+
+                &:nth-child(3) {
                   background: #FF8374;
                 }
               }
             }
-            > :not(:hover){
+
+            > :not(:hover) {
               z-index: -1;
             }
+
             &:hover {
               width: 590px;
               height: 420px;
@@ -1405,7 +1421,7 @@
 
               flex: 2;
 
-              
+
               h1 {
                 display: none;
               }
@@ -1456,30 +1472,35 @@
     }
   }
 
-  .what{
+  .what {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0;
     margin-top: 100px;
-    &__inner{
-      ul{
+
+    &__inner {
+      ul {
         display: flex;
         justify-content: space-between;
         list-style-type: none;
-        li{
-          &:nth-child(1){
+
+        li {
+          &:nth-child(1) {
             width: 610px;
             padding-left: 0;
-            span{
+
+            span {
               display: flex;
               align-items: center;
-              hr{
+
+              hr {
                 width: 80px;
                 background-color: #525596;
                 border: 1px solid #525596;
                 margin-right: 20px;
               }
-              h4{
+
+              h4 {
                 font-size: 20px;
                 color: #525596;
                 border-left: 10px 10px solid #525596;
@@ -1487,13 +1508,15 @@
                 letter-spacing: 0.2em;
               }
             }
-            h2{
+
+            h2 {
               font-size: 60px;
               color: #2F327D;
               margin-top: 50px;
               margin-bottom: 30px;
             }
-            p{
+
+            p {
               width: 100%;
               letter-spacing: 0.2em;
               line-height: 42px;
@@ -1501,7 +1524,8 @@
               font-size: 26px;
               margin-bottom: 30px;
             }
-            button{
+
+            button {
               width: 400px;
               height: 80px;
               border: 1px solid #49BBBD;
@@ -1515,19 +1539,23 @@
               align-items: center;
               padding-left: 30px;
               cursor: pointer;
-              i{
+
+              i {
                 border: 1px solid #49BBBD;
                 border-radius: 50%;
                 padding: 26px;
               }
             }
           }
-          &:nth-child(2){
+
+          &:nth-child(2) {
             width: 750px;
-            img{
+
+            img {
               z-index: -1;
             }
-            b{
+
+            b {
               width: 680px;
               height: 330px;
               padding: 20px;
@@ -1536,9 +1564,10 @@
               background-color: #fff;
               box-shadow: 2px 4px 60px rgba(41, 44, 124, 0.1);
               border-radius: 20px;
-              transform: translate(100px,-200px);
+              transform: translate(100px, -200px);
               border-left: 20px solid #F67766;
-              h3{
+
+              h3 {
                 margin-left: 30px;
                 padding-left: 40px;
                 border-left: 1px solid #BDBDD1;
@@ -1547,17 +1576,20 @@
                 letter-spacing: 0.2em;
                 color: #5F5F7E;
               }
-              span{
+
+              span {
                 color: #5F5F7E;
                 display: flex;
                 justify-content: space-between;
                 margin-top: 40px;
-                h5{
+
+                h5 {
                   font-size: 24px;
                   margin-left: 30px;
                 }
-                div{
-                  h6{
+
+                div {
+                  h6 {
                     font-size: 18px;
                   }
                 }
@@ -1569,36 +1601,43 @@
     }
   }
 
-  .latest{
+  .latest {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0;
-    &__inner{
+
+    &__inner {
       text-align: center;
-      h1{
+
+      h1 {
         color: #2F327D;
         font-size: 36px;
         line-height: 64px;
       }
-      h2{
+
+      h2 {
         color: #696984;
         font-size: 24px;
       }
-      ul{
+
+      ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
         list-style-type: none;
-        li{
+
+        li {
           margin-top: 100px;
           margin-bottom: 100px;
           text-align: start;
-          &:nth-child(1){
+
+          &:nth-child(1) {
             display: flex;
             flex-direction: column;
             text-align: start;
             margin-top: 20px;
-            button{
+
+            button {
               width: 130px;
               height: 40px;
               background-color: #49BBBD;
@@ -1609,36 +1648,44 @@
               border-radius: 25px;
               margin-top: 20px;
             }
-            h3{
+
+            h3 {
               font-size: 26px;
               color: #252641;
               margin-top: 50px;
             }
-            p{
+
+            p {
               color: #696984;
               font-size: 20px;
               margin-top: 30px;
             }
-            a{
+
+            a {
               margin-top: 30px;
               color: #696984;
               font-size: 20px;
             }
           }
-          &:nth-child(2){
+
+          &:nth-child(2) {
             margin-left: 50px;
-            span{
+
+            span {
               display: flex;
               justify-content: space-between;
               position: relative;
               margin-bottom: 50px;
-              &:nth-child(2), &:nth-child(3){
-                button{
+
+              &:nth-child(2),
+              &:nth-child(3) {
+                button {
                   width: 100px;
                   left: 160px;
                 }
               }
-              button{
+
+              button {
                 position: absolute;
                 left: 120px;
                 bottom: 20px;
@@ -1650,12 +1697,13 @@
                 border: none;
                 cursor: pointer;
               }
-              b{
+
+              b {
                 padding-left: 50px;
                 color: #252641;
                 font-size: 22px;
-                
-                h5{
+
+                h5 {
                   font-size: 20px;
                   color: #696984;
                   margin-top: 30px;
