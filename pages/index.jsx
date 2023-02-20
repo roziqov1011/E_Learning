@@ -195,10 +195,10 @@ export default function Home() {
               <li className={styles.lillar}>
                 <h5>
                   <Image src='image/Howard.svg' alt='rasm' width={255} height={246} />
-                  <h6>
+                  <span className={styles.spannn}>
                     <button>Present</button>
                     <button>End the Call</button>
-                  </h6>
+                  </span>
                 </h5>
                 <h5>
                   <Image src='image/Tamara.svg' alt='rasm' width={166} height={160} />
@@ -246,7 +246,7 @@ export default function Home() {
               </li>
               <li>
                 <h3>
-                  <h5></h5>
+                  <p className={styles.ppp}></p>
                   <Image src='/image/qizcha__one.svg' alt='d' width={86} height={86} />
                   <Image src='/image/qizcha__two.svg' className={styles.rasm} alt='d' width={86} height={86} />
                 </h3>
@@ -312,7 +312,7 @@ export default function Home() {
               <ul>
                 <li>
                   <h1>
-                    <h3>boooks</h3>
+                    <p className={styles.plar}>boooks</p>
                   </h1>
                   <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
                   <b>
@@ -324,7 +324,7 @@ export default function Home() {
                 </li>
                 <li>
                   <h1>
-                    <h3>boooks</h3>
+                    <p className={styles.plar}>boooks</p>
                   </h1>
                   <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
                   <b>
@@ -336,7 +336,7 @@ export default function Home() {
                 </li>
                 <li>
                   <h1>
-                    <h3>boooks</h3>
+                    <p className={styles.plar}>boooks</p>
                   </h1>
                   <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
                   <b>
@@ -348,7 +348,7 @@ export default function Home() {
                 </li>
                 <li>
                   <h1>
-                    <h3>boooks</h3>
+                    <p className={styles.plar}>boooks</p>
                   </h1>
                   <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
                   <b>
@@ -361,7 +361,7 @@ export default function Home() {
 
                 <li>
                   <h1>
-                    <h3>boooks</h3>
+                    <p className={styles.plar}>boooks</p>
                   </h1>
                   <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
                   <b>
@@ -373,7 +373,7 @@ export default function Home() {
                 </li>
                 <li>
                   <h1>
-                    <h3>boooks</h3>
+                    <p className={styles.plar}>anime</p>
                   </h1>
                   <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
                   <b>
@@ -392,7 +392,7 @@ export default function Home() {
               <ul>
                 <li>
                   <h1>
-                    <h3>Anime</h3>
+                    <p className={styles.plar}>anime</p>
                   </h1>
                   <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
                   <b>
@@ -404,7 +404,7 @@ export default function Home() {
                 </li>
                 <li>
                   <h1>
-                    <h3>Anime</h3>
+                    <p className={styles.plar}>anime</p>
                   </h1>
                   <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
                   <b>
@@ -416,7 +416,7 @@ export default function Home() {
                 </li>
                 <li>
                   <h1>
-                    <h3>Anime</h3>
+                    <p className={styles.plar}>anime</p>
                   </h1>
                   <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
                   <b>
@@ -428,7 +428,7 @@ export default function Home() {
                 </li>
                 <li>
                   <h1>
-                    <h3>Anime</h3>
+                    <p className={styles.plar}>anime</p>
                   </h1>
                   <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
                   <b>
@@ -441,7 +441,7 @@ export default function Home() {
 
                 <li>
                   <h1>
-                    <h3>Anime</h3>
+                    <p className={styles.plar}>anime</p>
                   </h1>
                   <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
                   <b>
@@ -453,7 +453,7 @@ export default function Home() {
                 </li>
                 <li>
                   <h1>
-                    <h3>Anime</h3>
+                    <p className={styles.plar}>boooks</p>
                   </h1>
                   <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
                   <b>
@@ -465,7 +465,7 @@ export default function Home() {
                 </li>
                 <li>
                   <h1>
-                    <h3>Anime</h3>
+                    <p className={styles.plar}>boooks</p>
                   </h1>
                   <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
                   <b>
@@ -477,7 +477,7 @@ export default function Home() {
                 </li>
                 <li>
                   <h1>
-                    <h3>Anime</h3>
+                    <p className={styles.plar}>boooks</p>
                   </h1>
                   <Image src='/image/qizcha.svg' alt='sada' width={200} height={400} />
                   <b>
