@@ -8,7 +8,7 @@ function Header() {
   const local = useRouter()
   return (
     <>
-      <header className={styles.header}>
+      <header className={local.pathname == '/login' || local.pathname == '/registration'? `${styles.none}` : `${styles.header}`}>
         <div className={styles.container}>
           <Image src='/image/logo.png' alt='logo' width={114} height={83} />
           <ul className={local.pathname != '/' ? `${styles.coll}` : ''}>
@@ -27,8 +27,8 @@ function Header() {
             <Link href=''>
               <li>About Us</li>
             </Link>
-            <button>Log In</button>
-            <button>Sign Up</button>
+            <button onClick={()=>local.push('/login')}>Log In</button>
+            <button onClick={()=>local.push('/registration')}>Sign Up</button>
           </ul>
         </div>
 

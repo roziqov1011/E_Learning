@@ -4,6 +4,8 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.scss'
 import Link from 'next/link'
 import { successData } from '@/data/home__page/homedata'
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -37,6 +39,15 @@ export default function Home() {
       title: 'Years of experience'
     },
   ]
+
+  const location = useRouter()
+  useEffect(()=>{
+    if(window.sessionStorage.getItem('key') == 'error'){
+      location.push('/')
+    }
+  },[location.pathname])
+
+
   return (
     <>
       <Head>
