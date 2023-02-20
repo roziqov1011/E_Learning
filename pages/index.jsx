@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.scss'
 import Link from 'next/link'
+import { successData } from '@/data/home__page/homedata'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -109,11 +110,10 @@ export default function Home() {
             <p>Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec nam et pharetra gravida. Adipiscing a quis ultrices eu ornare tristique vel nisl orci. </p>
             <ul>
               {
-                ourData?.map((e) => (
+                successData?.map((e) => (
                   <li key={e.id}>
                     <h4>{e.number}</h4>
                     <p>{e.title}</p>
-
                   </li>
                 ))
               }
