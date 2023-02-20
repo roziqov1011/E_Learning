@@ -6,10 +6,6 @@ import styles from '../../styles/Home.module.scss'
 
 function Header() {
   const local = useRouter()
-  if(local.pathname == '/'){
-    console.log(local.pathname)
-
-  }
   return (
     <>
       <header className={styles.header}>
