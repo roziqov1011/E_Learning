@@ -11,7 +11,7 @@ function Header() {
         <div className={styles.container}>
           <Image src='/image/logo.png' alt='logo' width={114} height={83} />
           <ul>
-            <Link href='/'>
+            <Link href='/'> 
               <li>Home</li>
             </Link>
             <Link href='/course'>
