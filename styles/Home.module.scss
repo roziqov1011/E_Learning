@@ -12,7 +12,16 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
+  .coll{
+    a{
+      color: #5B5B5B;
+      li{
+        &:hover{
+          color: #49BBBD;
+        }
+      }
+    }
+  }
   ul {
     display: flex;
     justify-content: space-evenly;

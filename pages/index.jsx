@@ -484,7 +484,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button>EXPLORE</button> 
                   </b>
                 </li>
               </ul>
