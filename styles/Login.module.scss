@@ -1,0 +1,139 @@
+.login {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 10px 0;
+
+    &__inner {
+        ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: space-between;
+            align-items: center;
+
+            li {
+                &:nth-child(1) {
+                    position: relative;
+
+                    h2 {
+                        position: absolute;
+                        font-size: 37px;
+                        color: #fff;
+                        left: 50px;
+                        bottom: 100px;
+                    }
+
+                    p {
+                        position: absolute;
+                        font-size: 26px;
+                        left: 50px;
+                        color: #fff;
+                        bottom: 50px;
+                    }
+                }
+
+                &:nth-child(2) {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    width: 450px;
+
+                    h2 {
+                        font-size: 16px;
+                        color: #000000;
+                        margin-bottom: 20px;
+                    }
+
+                    span {
+                        background: #49BBBD99;
+                        margin-top: 30px;
+                        border-radius: 33px;
+                        color: #fff;
+                        text-align: center;
+                        margin: 0 15%;
+                        width: 330px;
+                        height: 60px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        button {
+                            background: none;
+                            border: none;
+                            color: #fff;
+                            padding: 15px 60px;
+                            cursor: pointer;
+
+                            &:nth-child(1) {
+                                background: #49BBBD;
+                                border-radius: 33px;
+                            }
+                        }
+                    }
+                    p {
+                        margin-top: 50px;
+                        font-size: 16px;
+                        line-height: 24px;
+                        text-align: start;
+                        color: #5B5B5B;
+                    }
+                    form{
+                        text-align: start;
+                        margin-top: 50px;
+                        label {
+                            text-align: start;
+                            margin-top: 50px;
+                        }
+                        input {
+                            margin-top: 10px;
+                            border-radius: 40px;
+                            background: #fff;
+                            padding-left: 20px;
+                            margin-bottom: 50px;
+                            font-size: 15px;
+                            align-items: start;
+                            &::placeholder {
+                                color: #ACACAC;
+                            }
+                            
+                        }
+                        b{
+                            text-align: start;
+                            margin-top: 20px;
+                            display: flex;
+                            align-items: center;
+                            label{
+                                color: #000000;
+                                margin: 0;
+                                padding-left: 10px;
+                                font-size: 12px;
+                            }
+                            input{
+                                margin: 0;
+                            }
+                            
+                        }
+                        .input {
+                            width: 435px;
+                            height: 55px;
+                            border: 1px solid #49BBBD;
+                            outline: none;
+                        }
+                        .input1{
+                            margin-bottom: 0;
+                        }
+                        .log{
+                            width: 232px;
+                            height: 50px;
+                            text-align: center;
+                            background-color: #49BBBD;
+                            color: #fff;
+                            border: none;
+                            border-radius: 30px;
+                            margin-left: 40%;
+                            margin-top: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,11 +1,13 @@
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import React from 'react'
 import styles from '../../styles/Footer.module.scss'
 
 function Footer() {
+  const local = useRouter()
   return (
     <footer>
-      <div className={styles.footer}>
+      <div className={local.pathname == '/login' || local.pathname == '/registration' ? `${styles.none}` : `${styles.footer}`}>
         <div className={styles.container}>
           <div className={styles.footer__logo}>
             <Image src='/image/footer__logo.png' alt='footer__logo' width={94} height={70}/>
