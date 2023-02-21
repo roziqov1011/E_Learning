@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Slab:wght@400;600;700&display=swap");
 .checkout {
+  font-family: 'Poppins', sans-serif;
   &__container {
-    &__wrapper{
+    &__wrapper {
       display: flex;
       justify-content: space-between;
       align-items: start;
@@ -157,15 +158,14 @@
           }
         }
         &__text1 {
-  
           display: flex;
           justify-content: space-between;
           margin-top: 50px;
-          border-bottom: 0.5px solid #5B5B5B;
+          border-bottom: 0.5px solid #5b5b5b;
           padding-bottom: 20px;
           span {
-            b{
-              font-family: 'Poppins';
+            b {
+              font-family: "Poppins";
               font-style: normal;
               font-weight: 400;
               font-size: 18px;
@@ -173,42 +173,38 @@
               letter-spacing: 0.02em;
               color: #000000;
             }
-            p{
-              font-family: 'Poppins';
+            p {
+              font-family: "Poppins";
               font-style: normal;
               font-weight: 400;
               font-size: 18px;
               line-height: 180%;
               letter-spacing: 0.02em;
-              color: #5B5B5B;
-  
+              color: #5b5b5b;
             }
-            h4{
-              font-family: 'Poppins';
+            h4 {
+              font-family: "Poppins";
               font-style: normal;
               font-weight: 400;
               font-size: 24px;
               line-height: 100%;
               letter-spacing: 0.02em;
               color: #000000;
-  
-  
             }
           }
-          .span{
+          .span {
             padding-right: 70px;
           }
         }
         &__text2 {
-  
           display: flex;
           justify-content: space-between;
           margin-top: 50px;
-          border-bottom: 0.5px solid #5B5B5B;
+          border-bottom: 0.5px solid #5b5b5b;
           padding-bottom: 20px;
           span {
-            b{
-              font-family: 'Poppins';
+            b {
+              font-family: "Poppins";
               font-style: normal;
               font-weight: 400;
               font-size: 18px;
@@ -216,55 +212,52 @@
               letter-spacing: 0.02em;
               color: #000000;
             }
-            p{
-              font-family: 'Poppins';
+            p {
+              font-family: "Poppins";
               font-style: normal;
               font-weight: 400;
               font-size: 18px;
               line-height: 180%;
               letter-spacing: 0.02em;
-              color: #5B5B5B;
-  
+              color: #5b5b5b;
             }
-            h4{
-              font-family: 'Poppins';
+            h4 {
+              font-family: "Poppins";
               font-style: normal;
               font-weight: 400;
               font-size: 24px;
               line-height: 100%;
               letter-spacing: 0.02em;
               color: #000000;
-  
-  
             }
           }
-          .span{
+          .span {
             padding-right: 70px;
           }
         }
-        &__text3{
+        &__text3 {
           padding-left: 0;
           padding: 15px 15px;
-          li{
+          li {
             width: 100%;
             display: flex;
             justify-content: space-between;
-            border-bottom: 0.5px solid #5B5B5B;
+            border-bottom: 0.5px solid #5b5b5b;
             padding-bottom: 11px;
             padding-top: 11px;
-            h4{
-              font-family: 'Poppins';
+            h4 {
+              font-family: "Poppins";
               font-style: normal;
               font-weight: 600;
               font-size: 20px;
               line-height: 180%;
               /* identical to box height, or 36px */
-  
+
               letter-spacing: 0.02em;
-  
-              color: #5B5B5B;
-              b{
-                font-family: 'Poppins';
+
+              color: #5b5b5b;
+              b {
+                font-family: "Poppins";
                 font-style: normal;
                 font-weight: 600;
                 font-size: 20px;
@@ -274,17 +267,20 @@
               }
             }
           }
-          .fourth{
+          .fourth {
             border: none;
           }
         }
       }
     }
-    &__main{
+    &__main {
       margin-top: 150px;
-      &__title{
-        h3{
-          font-family: 'Poppins';
+      &__title {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        h3 {
+          font-family: "Poppins";
           font-style: normal;
           font-weight: 500;
           font-size: 30px;
@@ -292,6 +288,75 @@
           letter-spacing: 0.02em;
           color: #000000;
         }
+        a {
+          text-decoration: none;
+        }
+      }
+      &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style-type: none;
+        padding-left: 0;
+        .list__card1{
+          background-image: url(../public/image/checkoutCard1.svg);
+          background-size: cover;
+          background-position: center;
+        }
+        .list__card2{
+          background-image: url(../public/image/checkoutCard2.svg);
+          background-size: cover;
+          background-position: center;
+        }
+        .list__card3{
+          background-image: url(../public/image/checkoutCard3.svg);
+          background-size: cover;
+          background-position: center;
+        }
+        li {
+          width: 400px;
+          padding-left: 45px;
+          padding-bottom: 30px;
+          padding-top: 45px;
+          border-radius: 20px;
+          margin-top: 70px;
+          margin-bottom: 87px;
+          h2 {
+            width: 120px;
+            height: 120px;
+            background: #49bbbd;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 75px;
+            color: #ffffff;
+            padding: 10px;
+          }
+          b {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 42px;
+            color: #ffffff;
+          }
+          p{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 180%;
+            letter-spacing: 0.02em;
+            color: #FFFFFF;
+          }
+        }
+
       }
     }
   }

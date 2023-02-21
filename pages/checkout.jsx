@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 import card1 from '../assets/images/paycard1.png'
 import card2 from '../assets/images/paycard2.png'
@@ -12,6 +13,9 @@ function checkout() {
         <title>Checkout</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossOrigin="anonymous"></link>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet"></link>
       </Head>
       <div className={style.checkout} id='checkout'>
         <section className={`${style.checkout__container} container`}>
@@ -72,7 +76,7 @@ function checkout() {
               </section>
               <section className={style.checkout__container__wrapper_right__text2}>
                 <span>
-                  <Image src='/image/checkoutRight.png'  width={160} height={107} />
+                  <Image src='/image/checkoutRight.png' width={160} height={107} />
                 </span>
                 <span className={style.span}>
                   <b>adipising elit, sed do  tempor</b>
@@ -106,16 +110,26 @@ function checkout() {
           <section className={style.checkout__container__main}>
             <span className={style.checkout__container__main__title}>
               <h3>Top Education offers and deals are listed here</h3>
+              <Link href='/checkout'>See All</Link>
             </span>
             <ul className={style.checkout__container__main__list}>
-              <li>
-                
+              <li className={style.list__card1}>
+                <h2>50%</h2>
+                <b>Lorem ipsum dolor</b>
+                <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
+                  Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
               </li>
-              <li>
-                
+              <li className={style.list__card2}>
+                <h2>10%</h2>
+                <b>Lorem ipsum dolor</b>
+                <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
+                  Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
               </li>
-              <li>
-                
+              <li className={style.list__card3}>
+                <h2>50%</h2>
+                <b>Lorem ipsum dolor</b>
+                <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor
+                  Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
               </li>
             </ul>
           </section>
