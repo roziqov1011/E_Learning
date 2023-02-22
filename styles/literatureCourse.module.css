@@ -141,7 +141,12 @@
     flex-wrap: wrap;
     list-style-type: none;
 }
-
+.book a{
+    text-decoration: none;
+}
+.div a{
+    text-decoration: none;
+}
 .book p {
     padding: 16px;
     margin-top: 50px;
