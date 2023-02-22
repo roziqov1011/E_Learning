@@ -1,12 +1,51 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import card1 from '../assets/images/paycard1.png'
 import card2 from '../assets/images/paycard2.png'
 import card3 from '../assets/images/paycard3.png'
 import style from '../styles/Checkout.module.scss'
 function checkout() {
+  const [styled , setStyled ] = useState({})
+  const [val , setVal ] = useState('')
+  const [val2 , setVal2] = useState('')
+  const formHandler = (e)=>{
+    e.preventDefault()
+    let styled = {}
+    if(val.length === 16 ){
+      styled ={
+        border: '2px solid green'
+      }
+    }else if(val2.length === 16){
+      styled ={
+        border: '2px solid green'
+      }
+    }
+    else{
+      styled ={
+        border: '2px solid red'
+      }
+    }
+    setStyled(styled)
+  }
+  const inpVal1 = (e)=>{
+    const val = e.target.value
+    setVal(val)
+  }
+
+
+  const inpVal2 = (e)=>{
+    const val2 = e.target.value
+    setVal2(val2);
+  }
+
+
+
+  // const keyUpValue1 =(e)=>{
+  //   console.log(e.target.value);
+
+  // }
   return (
     <>
       <Head>
@@ -36,11 +75,11 @@ function checkout() {
                   <Image src={card3} width={139} height={92.4} />
                 </li>
               </ul>
-              <form action="#" className={style.checkout__container__wrapper__left__form}>
-                <label htmlFor="Name">Name on card</label>
-                <input type="text" placeholder='Enter name on Card' />
+              <form onSubmit={formHandler} action="#" className={style.checkout__container__wrapper__left__form}>
+                <label  htmlFor="Name">Name on card</label>
+                <input style={styled} onChange={inpVal1} type="text" placeholder='Enter name on Card' />
                 <label htmlFor="Name">Card Number</label>
-                <input type="text" placeholder='Enter Card Number' />
+                <input style={styled} onChange={inpVal2} type="text" placeholder='Enter Card Number' />
                 <section>
                   <div>
                     <label htmlFor="#">Expiration Date ( MM/YY )</label>
@@ -57,7 +96,7 @@ function checkout() {
                   <input type="checkbox" />
                   <label htmlFor="#">Save my information for faster checkout</label>
                 </div>
-                <button>Confirm Payment</button>
+                <button type='submit'>Confirm Payment</button>
               </form>
             </main>
             <main className={style.checkout__container__wrapper__right}>
