@@ -161,7 +161,7 @@
     background: #49BBBD;
     color: white;
 }
-npm .boo {
+.boo {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
