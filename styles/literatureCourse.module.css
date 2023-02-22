@@ -15,7 +15,6 @@
     background-color: red;
     padding: 30px;
     background: url(../public/image/baground.svg);
-    background-size: 100%;
     object-fit: cover;
 }
 
@@ -101,10 +100,12 @@
     justify-content: space-between;
     list-style-type: none;
     margin-top: 25px;
+    padding: 0;
     width: 60%;
 }
 
 .ul li {
+    cursor: pointer;
     display: flex;
 }
 
@@ -160,8 +161,7 @@
     background: #49BBBD;
     color: white;
 }
-
-.boo {
+npm .boo {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
