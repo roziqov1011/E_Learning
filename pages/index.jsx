@@ -1,11 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
+import { Content, Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.scss'
 import Link from 'next/link'
 import { successData } from '@/data/home__page/homedata'
 import { useRouter } from 'next/router'
-import { useEffect } from 'react'
+import { useContext, useEffect } from 'react'
+import { Context } from '@/components/Context/Context'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -39,13 +40,13 @@ export default function Home() {
       title: 'Years of experience'
     },
   ]
-
+  const {order,setOrder} = useContext(Context)
   const location = useRouter()
   useEffect(()=>{
-    if(window.sessionStorage.getItem('key') == 'error'){
+    if(order == false){
       location.push('/')
     }
-  },[location.pathname])
+  },[])
 
 
   return (
@@ -330,7 +331,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button onClick={()=>location.push('/checkout')}>EXPLORE</button>
                   </b>
                 </li>
                 <li>
@@ -342,7 +343,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button onClick={()=>location.push('/checkout')}>EXPLORE</button>
                   </b>
                 </li>
                 <li>
@@ -354,7 +355,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button onClick={()=>location.push('/checkout')}>EXPLORE</button>
                   </b>
                 </li>
                 <li>
@@ -366,7 +367,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button onClick={()=>location.push('/checkout')}>EXPLORE</button>
                   </b>
                 </li>
 
@@ -379,7 +380,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button onClick={()=>location.push('/checkout')}>EXPLORE</button>
                   </b>
                 </li>
                 <li>
@@ -391,7 +392,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button onClick={()=>location.push('/checkout')}>EXPLORE</button>
                   </b>
                 </li>
                 <h2></h2>
@@ -412,7 +413,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button onClick={()=>location.push('/checkout')}>EXPLORE</button>
                   </b>
                 </li>
                 <li>
@@ -424,7 +425,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button onClick={()=>location.push('/checkout')}>EXPLORE</button>
                   </b>
                 </li>
                 <li>
@@ -436,7 +437,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button onClick={()=>location.push('/checkout')}>EXPLORE</button>
                   </b>
                 </li>
                 <li>
@@ -448,7 +449,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button onClick={()=>location.push('/checkout')}>EXPLORE</button>
                   </b>
                 </li>
 
@@ -461,7 +462,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button onClick={()=>location.push('/checkout')}>EXPLORE</button>
                   </b>
                 </li>
                 <li>
@@ -473,7 +474,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button onClick={()=>location.push('/checkout')}>EXPLORE</button>
                   </b>
                 </li>
                 <li>
@@ -485,7 +486,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button onClick={()=>location.push('/checkout')}>EXPLORE</button>
                   </b>
                 </li>
                 <li>
@@ -497,7 +498,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button onClick={()=>location.push('/checkout')}>EXPLORE</button>
                   </b>
                 </li>
                 <h2></h2>
@@ -518,7 +519,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button onClick={()=>location.push('/checkout')}>EXPLORE</button>
                   </b>
                 </li>
                 <li>
@@ -530,7 +531,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button onClick={()=>location.push('/checkout')}>EXPLORE</button>
                   </b>
                 </li>
                 <li>
@@ -542,7 +543,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button onClick={()=>location.push('/checkout')}>EXPLORE</button>
                   </b>
                 </li>
                 <li>
@@ -554,7 +555,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button onClick={()=>location.push('/checkout')}>EXPLORE</button>
                   </b>
                 </li>
 
@@ -567,7 +568,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button onClick={()=>location.push('/checkout')}>EXPLORE</button>
                   </b>
                 </li>
                 <li>
@@ -579,7 +580,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button onClick={()=>location.push('/checkout')}>EXPLORE</button>
                   </b>
                 </li>
                 <li>
@@ -591,7 +592,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button onClick={()=>location.push('/checkout')}>EXPLORE</button>
                   </b>
                 </li>
                 <li>
@@ -603,7 +604,7 @@ export default function Home() {
                     <h6>Lorem ipsum dolor sit amet.</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perferendis repellendus quam laborum, cumque expedita!</p>
                     <h4>$450</h4>
-                    <button>EXPLORE</button>
+                    <button onClick={()=>location.push('/checkout')}>EXPLORE</button>
                   </b>
                 </li>
                 <h2></h2>

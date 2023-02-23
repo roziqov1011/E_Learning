@@ -1,7 +1,9 @@
+import { Context } from '@/components/Context/Context'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import { useRouter } from 'next/router'
+import React, { useContext, useEffect, useState } from 'react'
 import card1 from '../assets/images/paycard1.png'
 import card2 from '../assets/images/paycard2.png'
 import card3 from '../assets/images/paycard3.png'
@@ -39,6 +41,15 @@ function checkout() {
     const val2 = e.target.value
     setVal2(val2);
   }
+
+  const {order, setOrder} = useContext(Context)
+  const local = useRouter()
+  useEffect(()=>{
+    if(order == false){
+      local.push('/')
+    }
+  },[])
+
 
 
 
