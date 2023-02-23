@@ -60,11 +60,7 @@ function literatureCourse() {
     }
   ]
 
-  useEffect(()=>{
-    if(order == false){
-      local.push('/')
-    }
-  },[])
+
   return (
     <>
       <Head>

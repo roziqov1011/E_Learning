@@ -14,12 +14,8 @@
     border-radius: 20px;
     padding: 30px;
     background: url(../public/image/baground.svg);
-<<<<<<< HEAD
-    background-size: cover;
     background-repeat: no-repeat;
-=======
-    object-fit: cover;
->>>>>>> 829c0d6c5224a44e0fdb4df4a4b08333cd047394
+    background-size: cover;
 }
 
 .serverimg {
