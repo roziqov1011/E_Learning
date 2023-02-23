@@ -61,9 +61,8 @@ function course() {
       rangeee.current.style.width = `${Math.floor(foiz)}%`
       rangeee.current.style.height = '10px'
       rangeee.current.style.background = '#49BBBD'
-      rangeee.current.style.zIndex = '99'
-      console.log(Math.floor(foiz));
     })
+    console.log(Math.floor());
   }, [])
 
 
