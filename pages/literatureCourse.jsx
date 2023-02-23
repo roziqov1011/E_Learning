@@ -76,9 +76,7 @@ function literatureCourse() {
           <div className={styles.title}>
             <div className={styles.tittlecon}>
               <div className={styles.serverhead}>
-                {Data?.map((e) => (
-                  <h2 key={e.id}>{e.id == 1 ? e.name : ''}</h2>
-                ))}
+                <h2>About</h2>
               </div>
               <p>Assistant Professor at Mcmaster University</p>
               <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <br /> utlabore et dolore magna aliqua. Ut enum ad minim veniam, quis nostrud</b>
