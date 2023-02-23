@@ -110,6 +110,56 @@ function course() {
           </div>
         </div>
       </div>
+
+      <div className={styles.choice}>
+        <div className={styles.choice__container}>
+          <div className={styles.choice__container__inner}>
+            <h2>Choice favourite course from top category</h2>
+            <ul>
+              <li>
+                <b><i class="bi bi-brush"></i></b>
+                <h3>Design</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod</p>
+              </li>
+              <li>
+                <b><i class="bi bi-apple"></i></b>
+                <h3>Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod</p>
+              </li>
+              <li>
+                <b><i class="bi bi-currency-bitcoin"></i></b>
+                <h3>Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod</p>
+              </li>
+              <li>
+                <b><i class="bi bi-bag"></i></b>
+                <h3>Business</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod</p>
+              </li>
+              <li>
+                <b><i class="bi bi-person"></i></b>
+                <h3>Marketing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod</p>
+              </li>
+              <li>
+                <b><i class="bi bi-book"></i></b>
+                <h3>Photography</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod</p>
+              </li>
+              <li>
+                <b><i class="bi bi-stack-overflow"></i></b>
+                <h3>Acting</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod</p>
+              </li>
+              <li>
+                <b><i class="bi bi-bag"></i></b>
+                <h3>Business</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </>
   )
 }

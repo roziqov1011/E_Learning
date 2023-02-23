@@ -5,8 +5,19 @@ import styles from "@/styles/Blog.module.scss";
 import style from "@/styles/BlogDetails.module.scss";
 import blogIntro from "assets/images/blog.png";
 import blogList from "assets/images/blog-list.png";
+import { useContext, useEffect } from "react";
+import { Context } from "@/components/Context/Context";
+import { useRouter } from "next/router";
 
 const Blog = () => {
+
+  const {order, setOrder} = useContext(Context)
+  const local = useRouter()
+  useEffect(()=>{
+    if(order == false){
+      local.push('/')
+    }
+  },[])
   return (
     <>
       <Head>

@@ -109,3 +109,112 @@
         }
     }
 }
+
+.choice{
+    margin: 80px 0;
+    color: #252641;
+    &__container{
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0;
+        &__inner{
+            h2{
+                font-size: 36px;
+                line-height: 54px;
+            }
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                list-style-type: none;
+                flex-wrap: wrap;
+                li{
+                    margin: 20px; 
+                    width: 320px;
+                    height: 350px;
+                    border-radius: 20px;
+                    box-shadow: 0px 18.83px 47.08px rgba(47, 50, 125, 0.1);
+                    background: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 30px;
+                    b{
+                        background: #49BBBD4D;
+                        width: 90px;
+                        height: 90px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 20px;
+                        i{
+                            font-size: 46px;
+                            color: #49BBBD;
+                        }
+                    }
+                    h3{
+                        font-size: 30px;
+                        line-height: 45px;
+                        margin-top: 20px;
+                        margin-bottom: 25px;
+                    }
+                    p{
+                        color: #696984;
+                        font-size: 18px;
+                        line-height: 27px;
+                        text-align: center;
+                        margin-top: 0;
+                    }
+                    &:nth-child(2){
+                        b{
+                            background: #5B72EE4D;
+                            i{
+                                color: #5B72EE;
+                            }
+                        }
+                    }
+                    &:nth-child(3){
+                        b{
+                            background: #9DCCFF4D;
+                            i{
+                                color: #9DCCFF;
+                            }
+                        }
+                    }
+                    &:nth-child(4), &:nth-child(8){
+                        b{
+                            background: #00CBB84D;
+                            i{
+                                color: #00CBB8;
+                            }
+                        }
+                    }
+                    &:nth-child(5){
+                        b{
+                            background: #F48C064D;
+                            i{
+                                color: #F48C06;
+                            }
+                        }
+                    }
+                    &:nth-child(6){
+                        b{
+                            background: #EE645B4D;
+                            i{
+                                color: #EE645B;
+                            }
+                        }
+                    }
+                    &:nth-child(7){
+                        b{
+                            background: #2526414D;
+                            i{
+                                color: #252641;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
