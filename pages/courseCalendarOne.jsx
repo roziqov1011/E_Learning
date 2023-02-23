@@ -1,7 +1,16 @@
+import { Context } from '@/components/Context/Context'
 import Head from 'next/head'
-import React from 'react'
+import { useRouter } from 'next/router'
+import React, { useContext, useEffect } from 'react'
 
 function courseCalendarOne() {
+  const {order, setOrder} = useContext(Context)
+  const local = useRouter()
+  useEffect(()=>{
+    if(order == false){
+      local.push('/')
+    }
+  },[])
   return (
     <>
       <Head>

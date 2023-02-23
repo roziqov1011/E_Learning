@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from '@/styles/literatureCourse.module.css'
 
 function literatureCourse() {
@@ -59,6 +59,12 @@ function literatureCourse() {
       price: "$24"
     }
   ]
+
+  useEffect(()=>{
+    if(order == false){
+      local.push('/')
+    }
+  },[])
   return (
     <>
       <Head>

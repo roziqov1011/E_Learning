@@ -1,11 +1,14 @@
+import { Context } from '@/components/Context/Context'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import styles from '../styles/Login.module.scss'
 
 function login() {
     const local = useRouter()
     const arr = []
+    const {order, setOrder} = useContext(Context)
+
     const login = (e) => {
         e.preventDefault()
         let userr = e.target.elements.username.value
@@ -28,6 +31,7 @@ function login() {
             if (w.length > 0) {
                 for (let i = 0; i < w.length; i++) {
                     if (w[i].userName == userr && w[i].pass == pass) {
+                        setOrder(true)
                         local.push('/blog')
                         break
                     }
@@ -60,7 +64,7 @@ function login() {
                             <h2>Welcome to Learning..!</h2>
                             <span>
                                 <button onClick={() => local.push('/login')}>Login</button>
-                                <button>Register</button>
+                                <button onClick={()=> local.push('/registration')}>Register</button>
                             </span>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                             <form action="#" onSubmit={login}>

@@ -1,10 +1,12 @@
+import { Context } from '@/components/Context/Context'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import React from 'react'
+import React, { useContext } from 'react'
 import styles from '../styles/Register.module.scss'
 
 function register() {
     const local = useRouter()
+    const {order, setOrder} = useContext(Context)
 
     const register= (e)=>{
         
@@ -13,6 +15,7 @@ function register() {
         let userr = e.target.elements.username.value
         let pass = e.target.elements.password.value
         if(mail.length > 5 && userr.length > 3 && pass.length >= 8){
+            setOrder(true)
             fetch('https://638208329842ca8d3c9f7558.mockapi.io/user', {
                     method: 'POST',
                     headers: {
@@ -49,7 +52,7 @@ function register() {
                         <li>
                             <h2>Welcome to Learning..!</h2>
                             <span>
-                                <button>Login</button>
+                                <button onClick={() => local.push('/login')}>Login</button>
                                 <button>Register</button>
                             </span>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
