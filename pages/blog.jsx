@@ -192,55 +192,207 @@ const Blog = () => {
         </section>
 
         <section className={styles.marketing}>
-          <div className={`${styles.container} container`}>
-            <ul className={styles.container__top}>
-              <li>Marketing Articles</li>
-              <Link href="/">
-                <p>See all</p>
-              </Link>
-            </ul>
-            <ul className={styles.container__list}>
-              <li className={styles.container__list__item}>
-                <Image
-                  className={styles.container__list__item__img}
-                  src="/image/blogMar.png"
-                  alt="img"
-                  // layout="fill"
-                  width={180}
-                  height={180}
-                  placeholder="black"
-                />
-                <samp className={styles.container__list__item__samp}>
-                  <p className={styles.container__list__item__samp__items}>
-                    <i className="bi bi-columns-gap"></i>
-                    <p>Design</p>
+          <div className="container">
+            {" "}
+            <div className={styles.container}>
+              <ul className={styles.container__top}>
+                <li>Marketing Articles</li>
+                <Link href="/">
+                  <p>See all</p>
+                </Link>
+              </ul>
+              <ul className={styles.container__list}>
+                <li className={styles.container__list__item}>
+                  <Image
+                    className={styles.container__list__item__img}
+                    src="/image/blogMar.png"
+                    alt="img"
+                    // layout="fill"
+                    width={180}
+                    height={180}
+                    placeholder="black"
+                  />
+                  <span className={styles.container__list__item__samp}>
+                    <p className={styles.container__list__item__samp__items}>
+                      <i className="bi bi-columns-gap"></i>
+                      <b>Design</b>
+                    </p>
+                    <p className={styles.container__list__item__samp__items}>
+                      <i className="bi bi-clock"></i>
+                      <b>3 Month</b>
+                    </p>
+                  </span>
+                  <h2 className={styles.container__list__item__title}>
+                    AWS Certified solutions Architect
+                  </h2>
+                  <p className={styles.container__list__item__text}>
+                    Lorem ipsum dolor sit amet, consectetur adipising elit, sed
+                    do eiusmod tempor
                   </p>
-                  <p className={styles.container__list__item__samp__items}>
-                    <i className="bi bi-clock"></i>
-                    <p>3 Month</p>
+                  <span className={styles.container__list__item__span}>
+                    <p className={styles.container__list__item__span__items}>
+                      <Image
+                        src="/image/user.png"
+                        alt="img"
+                        // layout="fill"
+                        width={50}
+                        height={50}
+                        placeholder="black"
+                      />
+                      <b
+                        className={
+                          styles.container__list__item__span__items__name
+                        }
+                      >
+                        Jony
+                      </b>
+                    </p>
+                    <p className={styles.container__list__item__span__items}>
+                      <i
+                        className={
+                          styles.container__list__item__span__items__price
+                        }
+                      >
+                        $100
+                      </i>
+                      <b
+                        className={
+                          styles.container__list__item__span__items__sale
+                        }
+                      >
+                        $80
+                      </b> 
+                    </p>
+                  </span>
+                </li>
+                <li className={styles.container__list__item}>
+                  <Image
+                    className={styles.container__list__item__img}
+                    src="/image/blogMar.png"
+                    alt="img"
+                    // layout="fill"
+                    width={180}
+                    height={180}
+                    placeholder="black"
+                  />
+                  <span className={styles.container__list__item__samp}>
+                    <p className={styles.container__list__item__samp__items}>
+                      <i className="bi bi-columns-gap"></i>
+                      <b>Design</b>
+                    </p>
+                    <p className={styles.container__list__item__samp__items}>
+                      <i className="bi bi-clock"></i>
+                      <b>3 Month</b>
+                    </p>
+                  </span>
+                  <h2 className={styles.container__list__item__title}>
+                    AWS Certified solutions Architect
+                  </h2>
+                  <p className={styles.container__list__item__text}>
+                    Lorem ipsum dolor sit amet, consectetur adipising elit, sed
+                    do eiusmod tempor
                   </p>
-                </samp>
-                <h2 className={styles.container__list__item__title}>AWS Certified solutions Architect</h2>
-                <p className={styles.container__list__item__text}>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
-                <span className={styles.container__list__item__span}>
-                  <p className={styles.container__list__item__span__items}>
-                    <Image
-                      src="/image/user.png"
-                      alt="img"
-                      // layout="fill"
-                      width={50}
-                      height={50}
-                      placeholder="black"
-                    />
-                    <b className={styles.container__list__item__span__items__name}>Jony</b>
+                  <span className={styles.container__list__item__span}>
+                    <p className={styles.container__list__item__span__items}>
+                      <Image
+                        src="/image/user.png"
+                        alt="img"
+                        // layout="fill"
+                        width={50}
+                        height={50}
+                        placeholder="black"
+                      />
+                      <b
+                        className={
+                          styles.container__list__item__span__items__name
+                        }
+                      >
+                        Jony
+                      </b>
+                    </p>
+                    <p className={styles.container__list__item__span__items}>
+                      <i
+                        className={
+                          styles.container__list__item__span__items__price
+                        }
+                      >
+                        $100
+                      </i>
+                      <b
+                        className={
+                          styles.container__list__item__span__items__sale
+                        }
+                      >
+                        $80
+                      </b> 
+                    </p>
+                  </span>
+                </li>
+                <li className={styles.container__list__item}>
+                  <Image
+                    className={styles.container__list__item__img}
+                    src="/image/blogMar.png"
+                    alt="img"
+                    // layout="fill"
+                    width={180}
+                    height={180}
+                    placeholder="black"
+                  />
+                  <span className={styles.container__list__item__samp}>
+                    <p className={styles.container__list__item__samp__items}>
+                      <i className="bi bi-columns-gap"></i>
+                      <b>Design</b>
+                    </p>
+                    <p className={styles.container__list__item__samp__items}>
+                      <i className="bi bi-clock"></i>
+                      <b>3 Month</b>
+                    </p>
+                  </span>
+                  <h2 className={styles.container__list__item__title}>
+                    AWS Certified solutions Architect
+                  </h2>
+                  <p className={styles.container__list__item__text}>
+                    Lorem ipsum dolor sit amet, consectetur adipising elit, sed
+                    do eiusmod tempor
                   </p>
-                  <p className={styles.container__list__item__span__items}>
-                    <i className={styles.container__list__item__span__items__price}>$100</i>
-                    <b className={styles.container__list__item__span__items__sale}>$80</b>
-                  </p>
-                </span>
-              </li>
-            </ul>
+                  <span className={styles.container__list__item__span}>
+                    <p className={styles.container__list__item__span__items}>
+                      <Image
+                        src="/image/user.png"
+                        alt="img"
+                        // layout="fill"
+                        width={50}
+                        height={50}
+                        placeholder="black"
+                      />
+                      <b
+                        className={
+                          styles.container__list__item__span__items__name
+                        }
+                      >
+                        Jony
+                      </b>
+                    </p>
+                    <p className={styles.container__list__item__span__items}>
+                      <i
+                        className={
+                          styles.container__list__item__span__items__price
+                        }
+                      >
+                        $100
+                      </i>
+                      <b
+                        className={
+                          styles.container__list__item__span__items__sale
+                        }
+                      >
+                        $80
+                      </b> 
+                    </p>
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
       </main>

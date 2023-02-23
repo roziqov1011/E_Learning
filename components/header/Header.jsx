@@ -4,7 +4,6 @@ import { useRouter } from 'next/router'
 import React, { useContext } from 'react'
 import styles from '../../styles/Home.module.scss'
 import { Context } from '../Context/Context'
-
 function Header() {
   const local = useRouter()
   const {order,setOrder} = useContext(Context)
@@ -20,7 +19,7 @@ function Header() {
               <li>Home</li>
             </Link>
             <Link href='/course'>
-              <li>Cources</li>
+              <li>Cources</li> 
             </Link>
             <Link href=''>
               <li>Careers</li>
