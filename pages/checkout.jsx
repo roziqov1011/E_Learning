@@ -4,6 +4,7 @@ import React from 'react'
 import card1 from '../assets/images/paycard1.png'
 import card2 from '../assets/images/paycard2.png'
 import card3 from '../assets/images/paycard3.png'
+
 import style from '../styles/Checkout.module.scss'
 function checkout() {
   return (
