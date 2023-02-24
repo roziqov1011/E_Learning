@@ -1,4 +1,6 @@
+import { Context } from '@/components/Context/Context'
 import Head from 'next/head'
+
 
 import ArrowLeft from '@mui/icons-material/KeyboardBackspace';
 import Book from '@mui/icons-material/ImportContacts';
@@ -31,6 +33,7 @@ function courseCalendarOne() {
   const styleBook = {
     transform: "translateX(-10px)",
   };
+  
   return (
     <>
       <Head>
