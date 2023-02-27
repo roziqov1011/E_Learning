@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import React, { useContext, useEffect } from 'react'
 
-import style from '../styles/CourseDetail.module.scss'
+import style from '../styles/courseDetail.module.scss'
 import Time from '@mui/icons-material/AccessTime';
 
 import fullTop from '../assets/images/fullTop.png'

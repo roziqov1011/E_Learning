@@ -4,13 +4,14 @@ import Head from 'next/head'
 
 import ArrowLeft from '@mui/icons-material/KeyboardBackspace';
 import Book from '@mui/icons-material/ImportContacts';
-import React, { useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 
 import style from '../styles/CourseCalendarOne.module.scss'
 import Time from '@mui/icons-material/AccessTime';
 
 import { useState } from 'react';
 import { Calendar } from 'antd';
+import { useRouter } from 'next/router';
 
 function courseCalendarOne() {
   const [date, setDate] = useState(new Date());

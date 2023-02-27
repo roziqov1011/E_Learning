@@ -1,6 +1,8 @@
 import Head from 'next/head'
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import styles from '@/styles/literatureCourse.module.css'
+import { Context } from '@/components/Context/Context'
+import { useRouter } from 'next/router'
 
 function literatureCourse() {
   const Data = [
