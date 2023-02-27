@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from '@/styles/literatureCourse.module.css'
 
 function literatureCourse() {
@@ -59,9 +59,16 @@ function literatureCourse() {
       price: "$24"
     }
   ]
-  Data.map((e) => {
-    console.log(e.name);
-  })
+
+  const {order, setOrder} = useContext(Context)
+  const local = useRouter()
+  useEffect(()=>{
+    let str = window.localStorage.getItem('key')
+    if(order == false && str !== 'true'){
+      local.push('/')
+    }
+  },[])
+
   return (
     <>
       <Head>
@@ -77,9 +84,7 @@ function literatureCourse() {
           <div className={styles.title}>
             <div className={styles.tittlecon}>
               <div className={styles.serverhead}>
-                {Data?.map((e) => (
-                  <h2 key={e.id}>{e.id == 1 ? e.name : ''}</h2>
-                ))}
+                <h2>About</h2>
               </div>
               <p>Assistant Professor at Mcmaster University</p>
               <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <br /> utlabore et dolore magna aliqua. Ut enum ad minim veniam, quis nostrud</b>
@@ -100,13 +105,18 @@ function literatureCourse() {
                 </ul>
                 <ul className={styles.web}>
                   <li>
-                    <img src="/image/twitter.svg" alt='progress' />
+                    <a href="#">
+                      <img src="/image/twitter.svg" alt='progress' /></a>
                   </li>
                   <li>
-                    <img src="/image/twitter.svg" alt='progress' />
+                    <a href="#">
+                      <img src="/image/twitter.svg" alt='progress' />
+                    </a>
                   </li>
                   <li>
-                    <img src="/image/twitter.svg" alt='progress' />
+                    <a href="#">
+                      <img src="/image/twitter.svg" alt='progress' />
+                    </a>
                   </li>
                 </ul>
                 <ul>
@@ -118,21 +128,23 @@ function literatureCourse() {
         <ul className={styles.book}>
           {
             Data?.map((e) => (
-              <li key={e.id}>
-                <p>{e.name}</p>
-              </li>
+              <a href="#">
+                <li key={e.id}>
+                  <p>{e.name}</p>
+                </li>
+              </a>
             ))
           }
         </ul>
         <h2 className={styles.h2}>Literature course</h2>
-        <ul className={styles.boo}>
+        <ul id='1' className={styles.boo}>
           {
             block?.map((e, i) => (
               <li key={i}>
                 <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2Fyc3xlbnwwfHwwfHw%3D&w=1000&q=80" alt="" />
                 <div className={styles.div}>
                   <b>{e.tittle}</b>
-                  <p>{e.price}</p>
+                  <p><a href="#">{e.price}</a></p>
                 </div>
               </li>
             ))
@@ -145,7 +157,7 @@ function literatureCourse() {
                 <span aria-hidden="true">&laquo;</span>
               </a>
             </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#1">1</a></li>
             <li class="page-item"><a class="page-link" href="#">2</a></li>
             <li class="page-item"><a class="page-link" href="#">3</a></li>
             <li class="page-item">

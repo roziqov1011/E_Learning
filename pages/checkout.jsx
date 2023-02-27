@@ -1,10 +1,13 @@
+import { Context } from '@/components/Context/Context'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import { useRouter } from 'next/router'
+import React, { useContext, useEffect, useState } from 'react'
 import card1 from '../assets/images/paycard1.png'
 import card2 from '../assets/images/paycard2.png'
 import card3 from '../assets/images/paycard3.png'
+
 import style from '../styles/Checkout.module.scss'
 function checkout() {
   const [styled , setStyled ] = useState({})
@@ -39,6 +42,16 @@ function checkout() {
     const val2 = e.target.value
     setVal2(val2);
   }
+
+  const {order, setOrder} = useContext(Context)
+  const local = useRouter()
+  useEffect(()=>{
+    let str = window.localStorage.getItem('key')
+    if(order == false && str !== 'true'){
+      local.push('/')
+    }
+  },[])
+
 
 
 

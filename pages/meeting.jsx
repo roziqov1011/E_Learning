@@ -1,7 +1,17 @@
+import { Context } from '@/components/Context/Context'
 import Head from 'next/head'
-import React from 'react'
+import { useRouter } from 'next/router'
+import React, { useContext, useEffect } from 'react'
 
 function meeting() {
+  const {order, setOrder} = useContext(Context)
+  const local = useRouter()
+  useEffect(()=>{
+    let str = window.localStorage.getItem('key')
+    if(order == false && str !== 'true'){
+      local.push('/')
+    }
+  },[])
   return (
     <>
       <Head>

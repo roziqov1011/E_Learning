@@ -1,3 +1,4 @@
+import { Context } from '@/components/Context/Context'
 import Head from 'next/head'
 import Link from 'next/link'
 import React, { useState } from 'react'
