@@ -55,10 +55,11 @@
         }
       }
     }
-    
-    .none{
+
+    .none {
       display: none;
     }
+
     button {
       border-radius: 80px;
       color: #fff;
@@ -405,7 +406,7 @@
           height: 350px;
           overflow: inherit;
 
-          .divcha { 
+          .divcha {
             div {
               margin-top: -110px;
             }
@@ -1345,8 +1346,7 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: auto 100%;
-            transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
-
+            transition: all .8s;
 
             &:nth-child(1) {
               margin-left: -100px;
@@ -1382,11 +1382,6 @@
               }
             }
 
-            img,
-            b {
-              display: none;
-              opacity: 0;
-            }
 
             h1 {
               margin: 0 auto;
@@ -1411,6 +1406,11 @@
               z-index: -1;
             }
 
+            img,
+            b {
+              display: none;
+            }
+
             &:hover {
               width: 590px;
               height: 420px;
@@ -1431,15 +1431,12 @@
 
               img {
                 display: block;
-                opacity: 1;
               }
 
               b {
                 display: block;
                 padding: 30px;
-                transition: 5s ease-in-out;
                 opacity: 1;
-
                 h6 {
                   color: #000;
                   font-size: 32px;
