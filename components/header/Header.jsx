@@ -7,8 +7,6 @@ import { Context } from '../Context/Context'
 function Header() {
   const local = useRouter()
   const {order,setOrder} = useContext(Context)
-  const str = window.localStorage.getItem('key')
-
   return (
     <>
       <header className={local.pathname == '/login' || local.pathname == '/registration'? `${styles.none}` : `${styles.header}`}>
@@ -32,8 +30,8 @@ function Header() {
             <Link href=''>
               <li>About Us</li>
             </Link>
-            <button className={order == true || str !== 'true' ? styles.none : ''} onClick={()=>local.push('/login')}>Log In</button>
-            <button className={order == true || str !== 'true' ? styles.none : ''} onClick={()=>local.push('/registration')}>Sign Up</button>
+            <button className={order == true ? styles.none : ''} onClick={()=>local.push('/login')}>Log In</button>
+            <button className={order == true ? styles.none : ''} onClick={()=>local.push('/registration')}>Sign Up</button>
           </ul>
         </div>
       </header>
