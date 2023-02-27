@@ -12,6 +12,7 @@ function search() {
       local.push('/')
     }
   },[])
+  
   return (
     <>
       <Head>
