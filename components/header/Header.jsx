@@ -30,8 +30,8 @@ function Header() {
             <Link href=''>
               <li>About Us</li>
             </Link>
-            <button className={order == true ? styles.none : ''} onClick={()=>local.push('/login')}>Log In</button>
-            <button className={order == true ? styles.none : ''} onClick={()=>local.push('/registration')}>Sign Up</button>
+            <button className={order == true || window.localStorage.getItem('key') !== 'true' ? styles.none : ''} onClick={()=>local.push('/login')}>Log In</button>
+            <button className={order == true || window.localStorage.getItem('key') !== 'true' ? styles.none : ''} onClick={()=>local.push('/registration')}>Sign Up</button>
           </ul>
         </div>
       </header>
