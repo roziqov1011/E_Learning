@@ -46,6 +46,9 @@ export default function Home() {
     if(order == false){
       location.push('/')
     }
+    if(window.localStorage.getItem('key') !== 'true'){
+      window.localStorage.setItem('key', 'false')
+    }
   },[])
 
 

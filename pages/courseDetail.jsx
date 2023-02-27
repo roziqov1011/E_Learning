@@ -19,7 +19,7 @@ import Book from '@mui/icons-material/ImportContacts';
 import AppIcon from '@mui/icons-material/Apps';
 import Time2 from '@mui/icons-material/AccessTime';
 
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import Image from 'next/image';
 
 import Rating from '@mui/material/Rating';
@@ -100,11 +100,11 @@ function courseDetail() {
   const {order, setOrder} = useContext(Context)
   const local = useRouter()
   useEffect(()=>{
-    if(order == false){
+    let str = window.localStorage.getItem('key')
+    if(order == false && str !== 'true'){
       local.push('/')
     }
   },[])
-
   return (
     <>
       <Head>

@@ -1,6 +1,6 @@
 import { Context } from '@/components/Context/Context'
 import Head from 'next/head'
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import style from '../styles/Course.module.scss'
 import Time from '@mui/icons-material/AccessTime';
 
@@ -30,6 +30,7 @@ import Book from '@mui/icons-material/ImportContacts';
 
 import TextField from '@mui/material/TextField';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 function course() {
   const styleBook = {
@@ -41,7 +42,14 @@ function course() {
   const handleChange = (event) => {
     setAge(event.target.value);
   };
-
+  const {order, setOrder} = useContext(Context)
+  const local = useRouter()
+  useEffect(()=>{
+    let str = window.localStorage.getItem('key')
+    if(order == false && str !== 'true'){
+      local.push('/')
+    }
+  },[])
   return (
     <>
       <Head>
@@ -186,7 +194,7 @@ function course() {
           </div>
         </div>
 
-        <div className={styles.course}>
+        {/* <div className={styles.course}>
           <div className={styles.course__container}>
             <div className={styles.course__container__inner}>
               <div className={styles.course__container__inner__head}>
@@ -271,7 +279,7 @@ function course() {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
   </>
   )

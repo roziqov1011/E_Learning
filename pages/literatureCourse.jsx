@@ -60,6 +60,14 @@ function literatureCourse() {
     }
   ]
 
+  const {order, setOrder} = useContext(Context)
+  const local = useRouter()
+  useEffect(()=>{
+    let str = window.localStorage.getItem('key')
+    if(order == false && str !== 'true'){
+      local.push('/')
+    }
+  },[])
 
   return (
     <>
