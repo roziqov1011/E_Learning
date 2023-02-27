@@ -7,7 +7,6 @@ import { successData } from '@/data/home__page/homedata'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 
-
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -624,7 +623,7 @@ export default function Home() {
                 <p>TOTC has got more than 100k positive ratings from our users around the world. </p>
                 <p>Some of the students and teachers were greatly helped by the Skilline.</p>
                 <p>Are you too? Please give your assessment</p>
-                <button>Write your assessment <i class="bi bi-arrow-right"></i></button>
+                <button>Write your assessment <i className="bi bi-arrow-right"></i></button>
               </li>
               <li>
                 <Image src='/image/qizcha__second.svg' alt='rasm' width={560} height={700} />
