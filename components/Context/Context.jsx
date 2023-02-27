@@ -3,8 +3,7 @@ import { createContext, useState } from "react";
 
 const Context = createContext()
 function Provider({children}){
-    const wind = window.localStorage.getItem('key')
-    const [order, setOrder] = useState(wind !== 'true' ? false : true)
+    const [order, setOrder] = useState(false)
     
     return (
         <Context.Provider value={{order, setOrder}}>
