@@ -47,6 +47,8 @@ export default function Home() {
     }
     if(window.localStorage.getItem('key') !== 'true'){
       window.localStorage.setItem('key', 'false')
+    }else{
+      setOrder(true)
     }
   },[])
 
@@ -126,7 +128,7 @@ export default function Home() {
               {
                 successData?.map((e) => (
                   <li key={e.id}>
-                    <h4>{e.number}</h4>
+                    <h4 >{e.number}</h4>
                     <p>{e.title}</p>
                   </li>
                 ))
