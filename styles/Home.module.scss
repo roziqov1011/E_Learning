@@ -1409,6 +1409,11 @@
             img,
             b {
               display: none;
+
+            }
+            b{
+              width: 500px;
+              height: 390px;
             }
 
             &:hover {
@@ -1446,6 +1451,7 @@
                   font-size: 20px;
                   margin-top: 20px;
                   color: #696984;
+                  width: 400px;
                 }
 
                 h4 {
