@@ -36,27 +36,42 @@ function literatureCourse() {
   const block = [
     {
       tittle: "All Benefits of PLUS",
-      price: "$24"
+      price: "$24",
+      type:"book",
+      scr:"https://avatars.mds.yandex.net/i?id=bdd74422cda7700c512884a3a13cac6fb9ba2c9f-8181605-images-thumbs&n=13"
     },
     {
       tittle: "All Benefits of PLUS",
-      price: "$24"
+      price: "$24",
+      type:"book",
+      scr:"https://avatars.mds.yandex.net/i?id=bdd74422cda7700c512884a3a13cac6fb9ba2c9f-8181605-images-thumbs&n=13"
     },
     {
       tittle: "All Benefits of PLUS",
-      price: "$24"
+      price: "$24",
+      type:"book",
+      scr:"https://avatars.mds.yandex.net/i?id=bdd74422cda7700c512884a3a13cac6fb9ba2c9f-8181605-images-thumbs&n=13"
+
     },
     {
       tittle: "All Benefits of PLUS",
-      price: "$24"
+      price: "$24",
+      type:"book",
+      scr:"https://avatars.mds.yandex.net/i?id=bdd74422cda7700c512884a3a13cac6fb9ba2c9f-8181605-images-thumbs&n=13"
+
     },
     {
       tittle: "All Benefits of PLUS",
-      price: "$24"
+      price: "$24",
+      type:"book",
+      scr:"https://avatars.mds.yandex.net/i?id=bdd74422cda7700c512884a3a13cac6fb9ba2c9f-8181605-images-thumbs&n=13"
+
     },
     {
       tittle: "All Benefits of PLUS",
-      price: "$24"
+      price: "$24",
+      type:"book",
+      scr:"https://avatars.mds.yandex.net/i?id=bdd74422cda7700c512884a3a13cac6fb9ba2c9f-8181605-images-thumbs&n=13"
     }
   ]
 
@@ -88,7 +103,7 @@ function literatureCourse() {
                   </li>
                   <li>
                     <i className="bi bi-star"></i>
-                    <p>1,592 Students</p>
+                    <p>1.592 Students</p>
                   </li>
                   <li>
                     <i className="bi bi-star"></i>
@@ -121,7 +136,7 @@ function literatureCourse() {
           {
             Data?.map((e) => (
               <a href="#">
-                <li key={e.id}>
+                <li  key={e.id}>
                   <p>{e.name}</p>
                 </li>
               </a>
@@ -133,7 +148,7 @@ function literatureCourse() {
           {
             block?.map((e, i) => (
               <li key={i}>
-                <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2Fyc3xlbnwwfHwwfHw%3D&w=1000&q=80" alt="" />
+                <img src={e.scr} alt="" />
                 <div className={styles.div}>
                   <b>{e.tittle}</b>
                   <p><a href="#">{e.price}</a></p>

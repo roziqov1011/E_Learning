@@ -5,7 +5,6 @@
     margin: 0 auto;
     width: 88%;
 }
-
 .literabag {
     display: flex;
     justify-content: space-between;
@@ -17,7 +16,6 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .serverimg {
     object-fit: contain;
     background: url(../public/image/Ellipse\ 128.svg);
@@ -233,55 +231,53 @@
     text-align: left;
     color: #49BBBDCC;
 }
-.pagina{
-    text-align: center;
-}
-.pagina ul{
-    text-align: center;
-    width: 16%;
-    margin: 0 auto;
+.pagina {
     display: flex;
-padding: 10px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-.pagina li :hover{
-    color: white;
+.pagina ul {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+}
+.pagina li :hover {
     background-color: #1E90FF;
+    color: white;
     transition: 0.4s;
 }
 @media(max-width:1160px) {
     .boo li {
         margin: 80px auto;
     }
-
     .literabag {
         display: flex;
         flex-wrap: wrap;
     }
-
     .serverimg {
         position: absolute;
         width: 100px;
         height: 100px;
         border: none;
     }
-    .book{
+    .book {
         display: flex;
         justify-content: space-around;
     }
-    .book li{
+    .book li {
         margin: auto;
     }
-    .serverhead h2{
+    .serverhead h2 {
         margin: 0 auto;
     }
-    .title{
+    .title {
         padding: 0;
     }
-    .tittlecon p{
+    .tittlecon p {
         margin: 0 auto;
         text-align: center;
     }
+
     .tittlecon {
         text-align: center;
     }

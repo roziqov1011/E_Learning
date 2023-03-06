@@ -7,7 +7,6 @@
   font-family: 'Poppins', sans-serif;
 
 }
-
 .none {
   display: none;
 }
@@ -48,7 +47,6 @@
 
       li {
         transition: 0.15s ease-in-out;
-
         &:hover {
           color: #000;
           cursor: pointer;
@@ -248,7 +246,6 @@
             justify-content: space-evenly;
             margin-left: 50%;
             margin-top: 40px;
-
             span {
               h6 {
                 font-size: 20px
