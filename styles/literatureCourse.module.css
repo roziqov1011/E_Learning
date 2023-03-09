@@ -231,20 +231,19 @@
     text-align: left;
     color: #49BBBDCC;
 }
-.pagina {
-    display: flex;
-    justify-content: space-between;
-}
-.pagina ul {
-    text-align: center;
-    margin: 0 auto;
+.button{
+    margin: 0 20px;
+    border: 1px solid grey;
+    background-color: transparent;
+    border-radius: 40%;
     padding: 10px;
-    display: flex;
 }
-.pagina li :hover {
-    background-color: #1E90FF;
-    color: white;
-    transition: 0.4s;
+.butto{
+    border: none;
+    background-color: transparent;
+}
+.butt{
+    text-align: center;
 }
 @media(max-width:1160px) {
     .boo li {

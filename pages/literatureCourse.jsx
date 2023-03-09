@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '@/styles/literatureCourse.module.css'
 
 function literatureCourse() {
@@ -72,9 +72,13 @@ function literatureCourse() {
       price: "$24",
       type:"book",
       scr:"https://avatars.mds.yandex.net/i?id=bdd74422cda7700c512884a3a13cac6fb9ba2c9f-8181605-images-thumbs&n=13"
+
     }
   ]
-
+  const [page,setPage] = useState(1)
+    const handler = (pageIndex)=>{
+      console.log(pageIndex);
+    }
 
   return (
     <>
@@ -157,23 +161,11 @@ function literatureCourse() {
             ))
           }
         </ul>
-        <nav aria-label="Page navigation example" className={styles.pagina}>
-          <ul class="pagination">
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-              </a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#1">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+          <div className={styles.butt}>
+          <button className={styles.button} onClick={() =>handler(page - 1)}><i class="bi bi-chevron-compact-left"></i></button>
+          <span>{page}</span>
+        <button className={styles.button} onClick={() =>handler(page + 1)}><i class="bi bi-chevron-compact-right"></i></button>
+          </div>
       </div>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossOrigin="anonymous"></script>
     </>
