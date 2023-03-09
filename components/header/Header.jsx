@@ -1,3 +1,4 @@
+import { color } from '@mui/system'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
@@ -32,6 +33,9 @@ function Header() {
             </Link>
             <button className={order == true ? styles.none : ''} onClick={()=>local.push('/login')}>Log In</button>
             <button className={order == true ? styles.none : ''} onClick={()=>local.push('/registration')}>Sign Up</button>
+
+            <Image src='/image/user__logo.png' alt='logo' width={50} height={50} className={order !== true ? styles.none : ''}/>
+            <p className={order !== true ? styles.none : ''} style={{marginLeft: '10px', color: '#fff'}}>user</p>
           </ul>
         </div>
       </header>

@@ -1,6 +1,12 @@
 import Head from 'next/head'
+<<<<<<< HEAD
 import React, { useEffect, useState } from 'react'
+=======
+import React, { useContext, useEffect } from 'react'
+>>>>>>> 1be11a30442811f81e25875587bb41a75bd759f4
 import styles from '@/styles/literatureCourse.module.css'
+import { Context } from '@/components/Context/Context'
+import { useRouter } from 'next/router'
 
 function literatureCourse() {
   const Data = [
@@ -75,11 +81,6 @@ function literatureCourse() {
 
     }
   ]
-  const [page,setPage] = useState(1)
-    const handler = (pageIndex)=>{
-      console.log(pageIndex);
-    }
-
   return (
     <>
       <Head>

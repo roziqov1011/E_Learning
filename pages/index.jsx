@@ -8,7 +8,6 @@ import { useRouter } from 'next/router'
 import { useContext, useEffect } from 'react'
 import { Context } from '@/components/Context/Context'
 
-
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -45,6 +44,11 @@ export default function Home() {
   useEffect(()=>{
     if(order == false){
       location.push('/')
+    }
+    if(window.localStorage.getItem('key') !== 'true'){
+      window.localStorage.setItem('key', 'false')
+    }else{
+      setOrder(true)
     }
   },[])
 
@@ -124,7 +128,7 @@ export default function Home() {
               {
                 successData?.map((e) => (
                   <li key={e.id}>
-                    <h4>{e.number}</h4>
+                    <h4 >{e.number}</h4>
                     <p>{e.title}</p>
                   </li>
                 ))
@@ -625,7 +629,7 @@ export default function Home() {
                 <p>TOTC has got more than 100k positive ratings from our users around the world. </p>
                 <p>Some of the students and teachers were greatly helped by the Skilline.</p>
                 <p>Are you too? Please give your assessment</p>
-                <button>Write your assessment <i class="bi bi-arrow-right"></i></button>
+                <button>Write your assessment <i className="bi bi-arrow-right"></i></button>
               </li>
               <li>
                 <Image src='/image/qizcha__second.svg' alt='rasm' width={560} height={700} />

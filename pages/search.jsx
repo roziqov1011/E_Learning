@@ -6,12 +6,13 @@ import React, { useContext, useEffect } from 'react'
 function search() {
   const {order, setOrder} = useContext(Context)
   const local = useRouter()
-
   useEffect(()=>{
-    if(order == false){
+    let str = window.localStorage.getItem('key')
+    if(order == false && str !== 'true'){
       local.push('/')
     }
   },[])
+  
   return (
     <>
       <Head>

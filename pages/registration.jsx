@@ -15,7 +15,6 @@ function register() {
         let userr = e.target.elements.username.value
         let pass = e.target.elements.password.value
         if(mail.length > 5 && userr.length > 3 && pass.length >= 8){
-            setOrder(true)
             fetch('https://638208329842ca8d3c9f7558.mockapi.io/user', {
                     method: 'POST',
                     headers: {
@@ -31,6 +30,8 @@ function register() {
                 })
                     .then((res) => res.json())
                     .then((data) => console.table(data))
+                    setOrder(true)
+                    local.push('/course');
         }
         else{
             e.target.elements.mail.style.border = '2px solid red'

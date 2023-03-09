@@ -1,13 +1,15 @@
 import { Context } from '@/components/Context/Context'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import styles from '../styles/Login.module.scss'
 
 function login() {
     const local = useRouter()
     const arr = []
     const {order, setOrder} = useContext(Context)
+    const [check, setCheck] = useState(false)
+    console.log(check);
 
     const login = (e) => {
         e.preventDefault()
@@ -33,6 +35,11 @@ function login() {
                     if (w[i].userName == userr && w[i].pass == pass) {
                         setOrder(true)
                         local.push('/blog')
+                        if(check == true){
+                            window.localStorage.setItem('key', 'true')
+                        }else{
+                            window.localStorage.setItem('key', 'false')
+                        }
                         break
                     }
                     else{
@@ -73,7 +80,7 @@ function login() {
                                 <label htmlFor="password">Password</label>
                                 <input className={`${styles.input} ${styles.input1}`} type="password" placeholder="Enter your Password" name='password' />
                                 <b>
-                                    <input type="checkbox" id='check' width={15} height={15} />
+                                    <input type="checkbox" id='check' width={15} height={15} onClick={()=>setCheck(!check)}/>
                                     <label htmlFor="check">Rememebr me</label>
                                 </b>
                                 <button className={styles.log} type='submit'>Login</button>
