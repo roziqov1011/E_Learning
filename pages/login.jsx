@@ -15,6 +15,7 @@ function login() {
         e.preventDefault()
         let userr = e.target.elements.username.value
         let pass = e.target.elements.password.value
+        window.localStorage.setItem('key', 'true')
         fetch('https://638208329842ca8d3c9f7558.mockapi.io/user', {
             method: 'GET',
             headers: {
