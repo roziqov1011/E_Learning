@@ -41,6 +41,8 @@ export default function Home() {
   ]
   const {order,setOrder} = useContext(Context)
   const location = useRouter()
+
+  window.localStorage.setItem('key', 'true')
   useEffect(()=>{
     if(order == false){
       location.push('/')
